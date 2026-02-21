@@ -24,7 +24,7 @@ jobs:
         run: |
           TAG=${GITHUB_RUN_NUMBER}
           echo "Using TAG: $TAG"
-          docker build -t {{ secrets.DOCKERHUB_REPO }}:$TAG .
+          docker build . -t {{ secrets.DOCKERHUB_REPO }}:$TAG .
 
         # Push Image to Dockerhub
       - name: Push Docker Image
