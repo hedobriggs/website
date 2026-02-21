@@ -41,4 +41,4 @@ jobs:
             docker stop app || true
             docker rm app || true
             docker pull ${{ secrets.DOCKERHUB_REPO }}:${{ github.run_number }}
-            docker run -d --name app -p 80:80 ${{ secrets.DOCKERHUB_REPO }}:$TAG
+            docker run -d --name app -p 80:80 ${{ secrets.DOCKERHUB_REPO }}:{{ github.run_number }}
