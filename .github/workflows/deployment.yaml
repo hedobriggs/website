@@ -18,9 +18,6 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USER }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Disable Buildx
-        run: docker buildx rm default || true
-
       - name: Debug
         run: |
           docker --version
