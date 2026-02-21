@@ -22,7 +22,8 @@ jobs:
         # Build Image with Auti-Increment
       - name: Build Docker image
         run: |
-          TAG=${{ github.run.number }}
+          TAG=${GITHUB_RUN_NUMBER}
+          echo "Using TAG: $TAG"
           docker build -t {{ secrets.DOCKERHUB_REPO }}:$TAG .
 
         # Push Image to Dockerhub
