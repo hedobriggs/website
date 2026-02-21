@@ -20,8 +20,8 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
         #disable Buildx
-        run: |
-          docker buildx rm default || true
+        ///run: |
+          docker buildx rm default || true///
 
         # Build Image with Auti-Increment
       - name: Build Docker image
