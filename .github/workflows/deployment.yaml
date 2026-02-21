@@ -28,7 +28,7 @@ jobs:
         run: |
           TAG=${GITHUB_RUN_NUMBER}
           IMAGE=${{ secrets.DOCKER_REPO }}
-          docker build . -t $IMAGE:$TAG .
+          docker build buildx --load -t ${{ secrets.DOCKERHUB_REPO }}:$TAG .
           docker push $IMAGE:$TAG
 
       - name: Deploy to EC2
