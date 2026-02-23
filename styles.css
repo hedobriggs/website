@@ -1,0 +1,93 @@
+/* Global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark {
+    background: #1e1e1e;
+    color: #e0e0e0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0a66c2;
+    padding: 15px 30px;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#darkToggle {
+    background: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #0a66c2, #004a99);
+    color: white;
+}
+
+/* Content */
+.content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Diagram */
+.diagram {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Pipeline List */
+.pipeline-list li {
+    margin: 12px 0;
+    padding: 10px;
+    background: #e8f1fb;
+    border-left: 4px solid #0a66c2;
+    border-radius: 6px;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #777;
+}
