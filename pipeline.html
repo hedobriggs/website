@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pipeline Steps</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo">DevSecOps</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pipeline.html">Pipeline</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <button id="darkToggle">🌙</button>
+    </nav>
+</header>
+
+<section class="content fade-in">
+    <h1>DevSecOps Pipeline Steps</h1>
+
+    <ul class="pipeline-list">
+        <li>1. Developer pushes code to GitHub</li>
+        <li>2. CI pipeline triggers (Jenkins / GitHub Actions)</li>
+        <li>3. SonarQube code analysis</li>
+        <li>4. Trivy vulnerability scanning</li>
+        <li>5. OWASP dependency checks</li>
+        <li>6. Docker image build & push to ECR</li>
+        <li>7. Argo CD detects changes</li>
+        <li>8. Automated deployment to EKS</li>
+        <li>9. Prometheus scrapes metrics</li>
+        <li>10. Grafana visualizes dashboards</li>
+    </ul>
+</section>
+
+<footer>
+    © 2026 DevSecOps Deployment
+</footer>
+</body>
+</html>
